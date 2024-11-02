@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李馨洁</title>
+    <style>
+        .chujihezi{
+              width: 100px;
+              height: 400px;
+              margin: auto;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+          }
+        .chujiliebiao{
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+          }
+          .chujiliebiao>li{
+            list-style: none;
+            margin: 5px 0;
+            width: 80px;
+            height: 40px;
+            background-color: #d0d6cfea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30% 30% 30% 30%;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+      .erjihezi{
+            position: absolute;
+            top: 20;
+            left: 930px;
+            width: 250px;
+            height: 35px;
+            background-color: #eee;
+            border-radius: 5px;
+            display: none;
+        }
+      .erjiliebiao{
+            padding: 0px;
+            flex-direction: row;
+            display: flex;
+            justify-content: center;
+        }
+      .erjiliebiao li{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 5px 5px;
+        }
+      .chujiliebiao>li:hover>.erjihezi{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="chujihezi">
+        <ul class="chujiliebiao">
+            <li>
+                <a href="#">爱吃</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">泰餐</a></li>
+                        <li><a href="#">火锅</a></li>
+                        <li><a href="#">烤肉</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">爱喝</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">古茗</a></li>
+                        <li><a href="#">瑞幸</a></li>
+                        <li><a href="#">书亦</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">爱看</a>
+                <div class="erjihezi">
+                    <ul class="erjiliebiao">
+                        <li><a href="#">综艺</a></li>
+                        <li><a href="#">帅哥</a></li>
+                        <li><a href="#">腹肌</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
